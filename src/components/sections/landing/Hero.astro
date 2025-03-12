@@ -1,0 +1,33 @@
+---
+import Button from "../../common/Button.astro";
+
+const contents = [
+	{
+		name: "content 1",
+		backgroundColor: "bg-yellow-400"
+	},
+	{
+		name: "Content 2",
+		backgroundColor: "bg-blue-400"
+	}
+]
+
+---
+
+<section class="pt-36 pb-10">
+	<div class="text-center flex flex-col justify-center items-center mb-6">
+		<h1 class="font-neucha text-5xl mb-4">Manage Your Finance, Optimize Your Spending, and Secure Your Future!</h1>
+		<h2 class="w-1/2">Monitor every transaction in detail and get financial reports that help you manage your budget better.</h2>
+		<div class="my-4">
+			<Button text="Get Started" href="/" style="bg-red-400 text-white py-2 text-sm px-6 rounded-full"  />
+		</div>
+	</div>
+
+	<div class="grid grid-cols-2 gap-4 h-64"> 
+		{contents.map((content) => (
+			<div class={`w-full h-full ${content.backgroundColor} flex items-center justify-center rounded-lg`}>
+				<span class="text-white">{content.name}</span>
+			</div>
+		))}
+	</div>
+</section>

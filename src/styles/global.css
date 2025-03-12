@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Custom */
+@theme {
+  --font-neucha: 'Neucha', 'cursive';
+  --font-inter: 'Inter Tight Variable', 'sans-serif';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+}
