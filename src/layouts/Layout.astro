@@ -1,8 +1,10 @@
 ---
-import '@fontsource/neucha';
-import '@fontsource-variable/inter-tight';
+import '@fontsource-variable/unbounded';
+import '@fontsource/poppins';
+
+
 import "../styles/global.css";
-import Navbar from "../components/layout/Navbar.astro";
+import Navbar from "../components/layout/Navbar.tsx";
 ---
 
 <!doctype html>
@@ -14,8 +16,8 @@ import Navbar from "../components/layout/Navbar.astro";
     <meta name="generator" content={Astro.generator} />
     <title>PIGLLET</title>
   </head>
-  <body class="px-36">
-    <Navbar />
+  <body class="px-36 ">
+    <Navbar client:load />
     <slot />
   </body>
 </html>

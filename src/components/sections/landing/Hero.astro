@@ -1,33 +1,24 @@
----
-import Button from "../../common/Button.astro";
-
-const contents = [
-	{
-		name: "content 1",
-		backgroundColor: "bg-yellow-400"
-	},
-	{
-		name: "Content 2",
-		backgroundColor: "bg-blue-400"
-	}
-]
-
----
-
-<section class="pt-36 pb-10">
-	<div class="text-center flex flex-col justify-center items-center mb-6">
-		<h1 class="font-neucha text-5xl mb-4">Manage Your Finance, Optimize Your Spending, and Secure Your Future!</h1>
-		<h2 class="w-1/2">Monitor every transaction in detail and get financial reports that help you manage your budget better.</h2>
-		<div class="my-4">
-			<Button text="Get Started" href="/" style="bg-red-400 text-white py-2 text-sm px-6 rounded-full"  />
+<section class="pt-36 pb-20 min-h-screen flex flex-col justify-center items-center text-center">
+	<div class="">
+		<h1 class="pointer-events-none text-6xl font-extrabold">
+			Manage Your 
+			<span >Finances</span>,
+			<span >Spend Wisely</span>
+			and Build a 
+			<span>Better Tomorrow</span>, 
+			Today.
+		</h1>
+		<p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+			Start managing your finances with ease. Track your expenses, optimize your spending, and achieve financial freedom.
+		</p>
+		<div class="mt-8 flex flex-wrap justify-center gap-4">
+			<button class="bg-red-400 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-red-600 transition cursor-pointer">
+				Get Started
+			</button>
+			<button class="bg-gray-200 text-gray-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-300 transition cursor-pointer">
+				Request Demo
+			</button>
 		</div>
-	</div>
-
-	<div class="grid grid-cols-2 gap-4 h-64"> 
-		{contents.map((content) => (
-			<div class={`w-full h-full ${content.backgroundColor} flex items-center justify-center rounded-lg`}>
-				<span class="text-white">{content.name}</span>
-			</div>
-		))}
+	
 	</div>
 </section>

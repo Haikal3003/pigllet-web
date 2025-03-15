@@ -2,8 +2,8 @@
 
 /* Custom */
 @theme {
-  --font-neucha: 'Neucha', 'cursive';
-  --font-inter: 'Inter Tight Variable', 'sans-serif';
+  --font-unbounded: 'Unbounded Variable', 'sans-serif';
+  --font-poppins: 'Poppins', 'sans-serif';
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
 }
 
 input,
