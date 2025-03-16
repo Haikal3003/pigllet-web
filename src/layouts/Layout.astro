@@ -1,24 +1,27 @@
 ---
-import '@fontsource/neucha';
-import '@fontsource-variable/inter-tight';
+import '@fontsource-variable/unbounded';
+import '@fontsource/poppins';
+
+
 import "../styles/global.css";
-
-import Navbar from "../components/layout/Navbar.astro";
-
-
+import Navbar from "../components/layout/Navbar.tsx";
+import Footer from '../components/layout/Footer';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>PIGLLET</title>
-	</head>
-	<body class=" px-36">
-		<Navbar/>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>PIGLLET</title>
+  </head>
+  <body >
+    <Navbar client:load />
+    <main class="px-36" >
+      <slot />
+    </main>
+    <Footer client:load />
+  </body>
 </html>
