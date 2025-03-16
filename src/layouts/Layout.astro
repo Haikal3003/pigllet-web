@@ -5,6 +5,7 @@ import '@fontsource/poppins';
 
 import "../styles/global.css";
 import Navbar from "../components/layout/Navbar.tsx";
+import Footer from '../components/layout/Footer';
 ---
 
 <!doctype html>
@@ -16,8 +17,11 @@ import Navbar from "../components/layout/Navbar.tsx";
     <meta name="generator" content={Astro.generator} />
     <title>PIGLLET</title>
   </head>
-  <body class="px-36 ">
+  <body >
     <Navbar client:load />
-    <slot />
+    <main class="px-36 " >
+      <slot />
+    </main>
+    <!-- <Footer client:load/> -->
   </body>
 </html>
