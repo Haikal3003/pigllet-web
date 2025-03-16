@@ -1,4 +1,5 @@
 ---
+import FAQs from '../components/sections/landing/FAQs';
 import Feature from '../components/sections/landing/Feature.tsx';
 import Hero from '../components/sections/landing/Hero.astro';
 import Layout from '../layouts/Layout.astro';
@@ -10,4 +11,5 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<Hero/>
 	<Feature client:load/>
+	<FAQs client:load/>
 </Layout>
