@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav className={`fixed w-full left-0 top-0 px-6 md:px-20 lg:px-36 py-5 bg-white transition-transform duration-300 ease-in-out text-sm z-50 ${isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <img src="../../src/assets/logo-pigllet.png" alt="PIGLLET" className="w-8 h-8 object-cover" />
+          <img src="./assets/logo-pigllet.png" alt="PIGLLET" className="w-8 h-8 object-cover" />
           <span className="font-extrabold text-lg">PIGLLET</span>
         </div>
 

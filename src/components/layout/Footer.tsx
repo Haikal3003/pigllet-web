@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="flex justify-between gap-8 px-36">
         <div>
           <div id="logo" className="flex items-center space-x-4 w-full mb-8">
-            <img src="../../src/assets/logo-pigllet.png" alt="PIGLLET" className="w-6 h-6 object-cover" />
+            <img src="./assets/logo-pigllet.png" alt="PIGLLET" className="w-6 h-6 object-cover" />
             <span className="font-bold">PIGLLET</span>
           </div>
 

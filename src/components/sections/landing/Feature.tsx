@@ -44,7 +44,7 @@ export default function Feature() {
     <section className="flex flex-col items-center bg-white pb-20 px-6">
       <div className="flex flex-col text-center justify-center items-center mb-4">
         <div className="w-full max-w-[320px]">
-          <img src="../../src/assets/Mockup2.png" alt="App Mockup Preview" className="w-full h-auto object-cover" loading="lazy" />
+          <img src="./assets/Mockup2.png" alt="App Mockup Preview" className="w-full h-auto object-cover" loading="lazy" />
         </div>
       </div>
 
@@ -70,14 +70,14 @@ export default function Feature() {
         <div className="relative flex justify-center items-center overflow-hidden">
           <div className="absolute bottom-0 left-0 w-full h-[200px] bg-red-200 opacity-50 rounded-lg"></div>
 
-          <img src="../../src/assets/Mockup3.png" alt="Financial Management Feature Preview" className="relative w-[60%] h-auto object-contain" loading="lazy" />
+          <img src="./assets/Mockup3.png" alt="Financial Management Feature Preview" className="relative w-[60%] h-auto object-contain" loading="lazy" />
         </div>
       </div>
 
       {/* 2 */}
       <div className="grid grid-cols-2 items-center w-full  gap-10">
         <div className="relative flex justify-center items-center ">
-          <img src="../../src/assets/finance-analysis-91.png" alt="" />
+          <img src="./assets/finance-analysis-91.png" alt="" />
         </div>
 
         <div className="flex flex-col text-center md:text-left">
