@@ -51,7 +51,7 @@ export default function Navbar() {
           <ul className="flex items-center space-x-6">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="hover:text-green-500 transition">
+                <a href={link.href} className="hover:text-red-400 transition">
                   {link.name}
                 </a>
               </li>
