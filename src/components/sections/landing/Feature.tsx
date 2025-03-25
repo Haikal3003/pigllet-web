@@ -49,7 +49,7 @@ export default function Feature() {
       </div>
 
       {/* 1 */}
-      <div className="grid grid-cols-2 max-sm:grid-cols-1 items-center w-full  gap-10 mb-8">
+      <div className="grid grid-cols-2 max-md:grid-cols-1 items-center w-full  gap-10 mb-8">
         <div className="flex flex-col text-start">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Let's Start Managing Your Finances Today</h1>
           <p className="text-gray-600 mb-6">Take full control of your financial activities with our advanced management features.</p>
@@ -75,7 +75,7 @@ export default function Feature() {
       </div>
 
       {/* 2 */}
-      <div className="grid grid-cols-2 max-sm:grid-cols-1 items-center w-full  gap-10">
+      <div className="grid grid-cols-2 max-md:grid-cols-1 items-center w-full  gap-10">
         <div className="relative flex justify-center items-center ">
           <img src="./assets/finance-analysis-91.png" alt="" />
         </div>

@@ -46,7 +46,7 @@ export default function FAQs() {
 
   return (
     <section className="pb-20">
-      <div className="grid grid-cols-[1fr_2fr] max-sm:grid-cols-1 gap-4 max-sm:gap-10">
+      <div className="grid grid-cols-[1fr_2fr] max-md:grid-cols-1 gap-4 max-md:gap-10">
         <div id="col-1">
           <h2 className="text-slate-500 text-sm">FAQ'S</h2>
           <h1 className="text-3xl font-extrabold capitalize mb-6 ">frequently asked question</h1>
