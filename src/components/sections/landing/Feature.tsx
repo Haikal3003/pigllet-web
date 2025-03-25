@@ -49,10 +49,10 @@ export default function Feature() {
       </div>
 
       {/* 1 */}
-      <div className="grid grid-cols-2 items-center w-full  gap-10 mb-8">
-        <div className="flex flex-col text-center md:text-left">
+      <div className="grid grid-cols-2 max-sm:grid-cols-1 items-center w-full  gap-10 mb-8">
+        <div className="flex flex-col text-start">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Let's Start Managing Your Finances Today</h1>
-          <p className="text-gray-600 mb-6 text-sm">Take full control of your financial activities with our advanced management features.</p>
+          <p className="text-gray-600 mb-6">Take full control of your financial activities with our advanced management features.</p>
 
           <ul className="space-y-6">
             {features.map((feature, index) => (
@@ -60,29 +60,29 @@ export default function Feature() {
                 <div className="p-3 rounded-xl bg-red-50">{feature.icon}</div>
                 <div>
                   <strong className="text-gray-900 text-sm">{feature.title}</strong>
-                  <p className="text-gray-600 text-xs">{feature.description}</p>
+                  <p className="text-gray-600 text-sm">{feature.description}</p>
                 </div>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="relative flex justify-center items-center overflow-hidden">
+        <div className="relative flex justify-center items-center overflow-hidden ">
           <div className="absolute bottom-0 left-0 w-full h-[200px] bg-red-200 opacity-50 rounded-lg"></div>
 
-          <img src="./assets/Mockup3.png" alt="Financial Management Feature Preview" className="relative w-[60%] h-auto object-contain" loading="lazy" />
+          <img src="./assets/Mockup3.png" alt="Financial Management Feature Preview" className="relative w-[60%] h-auto object-contain max-sm:flex-none" loading="lazy" />
         </div>
       </div>
 
       {/* 2 */}
-      <div className="grid grid-cols-2 items-center w-full  gap-10">
+      <div className="grid grid-cols-2 max-sm:grid-cols-1 items-center w-full  gap-10">
         <div className="relative flex justify-center items-center ">
           <img src="./assets/finance-analysis-91.png" alt="" />
         </div>
 
-        <div className="flex flex-col text-center md:text-left">
+        <div className="flex flex-col text-start">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Easily Keep Track of Your Finances</h1>
-          <p className="text-gray-600 mb-6 text-sm">Stay on top of your financial health with real-time tracking of transactions, subscriptions, and budgets.</p>
+          <p className="text-gray-600 mb-6 ">Stay on top of your financial health with real-time tracking of transactions, subscriptions, and budgets.</p>
 
           <ul className="space-y-6">
             {trackings.map((tracking, index) => (
@@ -90,7 +90,7 @@ export default function Feature() {
                 <div className="p-3 rounded-xl bg-red-50">{tracking.icon}</div>
                 <div>
                   <strong className="text-gray-900 text-sm">{tracking.title}</strong>
-                  <p className="text-gray-600 text-xs">{tracking.description}</p>
+                  <p className="text-gray-600 text-sm">{tracking.description}</p>
                 </div>
               </li>
             ))}

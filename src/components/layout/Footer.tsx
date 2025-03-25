@@ -18,7 +18,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="w-full  pt-14 border-t border-t-slate-200">
-      <div className="flex justify-between gap-8 px-36">
+      <div className="flex justify-between gap-8 px-36 max-sm:px-6 max-sm:flex-col">
         <div>
           <div id="logo" className="flex items-center space-x-4 w-full mb-8">
             <img src="./assets/logo-pigllet.png" alt="PIGLLET" className="w-6 h-6 object-cover" />
@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h2 className="text-base font-semibold">Subscribe</h2>
             <p className="mt-2 text-gray-400 text-sm mb-6">Join our newsletter to stay up to date on features and releases.</p>
-            <div className="flex w-[400px] items-center space-x-2 p-2 rounded-full border border-slate-300 ">
+            <div className="flex w-[400px] max-sm:w-full items-center space-x-2 p-2 max-sm:p-1 rounded-full border border-slate-300 ">
               <div className="p-2 rounded-full bg-slate-100">
                 <MdOutlineMailOutline size={20} />
               </div>
@@ -65,13 +65,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between mt-8 border-t py-4 px-36 border-gray-200  text-center text-gray-500 text-sm">
+      <div className="flex items-center justify-between mt-8 border-t py-4 px-36 max-sm:px-6 max-sm:text-xs border-gray-200  text-center text-gray-500 text-sm">
         <span>© {new Date().getFullYear()} PIGLLET. All rights reserved.</span>
         <div className="flex space-x-4">
-          <a href="/privacy-policy" className="hover:text-black text-gray-500 text-sm">
+          <a href="/privacy-policy" className="hover:text-black text-gray-500 text-sm max-sm:text-xs">
             Privacy Policy
           </a>
-          <a href="/terms-of-service" className="hover:text-black text-gray-500 text-sm">
+          <a href="/terms-of-service" className="hover:text-black text-gray-500 max-sm:text-xs">
             Terms of Service
           </a>
         </div>
